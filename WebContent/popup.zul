@@ -1,0 +1,11 @@
+<zk>
+	<window title="ModalWin" border="normal" closable="true"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('tw.jimmy.lab.PopupViewModel')">
+		<vbox>
+			<textbox id="txtValore" value="@bind(vm.value)" />
+			<button id="btnChange" label="change"
+				onClick="@command('change')" />
+		</vbox>
+	</window>
+</zk>

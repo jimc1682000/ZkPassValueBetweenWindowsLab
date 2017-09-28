@@ -1,0 +1,13 @@
+<zk>
+	<window id="winTest" title="test" width="300px" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('tw.jimmy.lab.TestViewModel')">
+		<vbox>
+			<textbox id="txtValore" value="@bind(vm.value)" />
+			<button id="btnPopup" label="Call popup"
+				onClick="@command('callPopup')" />
+			<button id="btnUpload" label="Upload" upload="true"
+				onUpload="@command('upload')" />
+		</vbox>
+	</window>
+</zk>
